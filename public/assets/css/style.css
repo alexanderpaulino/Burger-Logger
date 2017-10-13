@@ -1,0 +1,165 @@
+html, body {
+	background-color: black;
+	background-image: url("../images/burger-background.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: fixed;
+}
+
+#burgerImage {
+	margin: auto;
+	display: block;
+	height: 150px;
+	width: 150px;
+}
+
+#burgerTitle {
+	color:white;
+}
+
+#readyBox {
+	float: left;
+	padding: 5px;
+	margin-top: 2%;
+	margin-left: 14%;
+	margin-bottom: 2%;
+}
+
+#ready {
+	text-align: left;
+	background-color: white;
+	border-style: solid;
+	border-width: 2px 2px 1px 2px;
+	padding: 20px;
+	border-color: black;
+	width: 350px;
+}
+
+#devourButton {
+	position: relative;
+	float: right;
+}
+
+#eatenBox {
+	float: right;
+	padding: 5px;
+	margin-top: 2%;
+	margin-right: 14%;
+	margin-bottom: 2%;
+}
+
+#eaten {
+	width: 350px;
+	color: gray;
+	background-color: #D2D2D2;
+	text-align: left;
+	border-style: solid;
+	border-width: 2px 2px 1px 2px;
+	border-color: #777;
+}
+
+#addBurger {
+	clear: both;
+	margin-bottom: 5%;
+}
+
+.label {
+  font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+@media (max-width: 1000px) {
+	
+#readyBox {
+	margin-left: 6%;
+	}
+
+#eatenBox {
+	margin-right: 6%;
+	}
+
+}
+
+@media (max-width: 840px) {
+
+html, body {
+	background-size: 150%;
+	}
+	
+#readyBox {
+	margin-left: 4%;
+	}
+
+#ready {
+	width: 300px;
+	}
+
+#eatenBox {
+	margin-right: 4%;
+	}
+
+#eaten {
+	width: 300px;
+	}
+
+}
+
+@media (max-width: 700px) {
+
+html, body {
+	background-size: 180%;
+	}
+	
+#readyBox {
+	margin-left: 2%;
+	}
+
+#ready {
+	width: 275px;
+	}
+
+#eatenBox {
+	margin-right: 2%;
+	}
+
+#eaten {
+	width: 275px;
+	}
+
+}
+
+@media (max-width: 615px) {
+
+html, body {
+	background-size: 300%;
+	}
+	
+#readyBox {
+	float: none;
+	margin: auto;
+	width: 100%;
+	}
+
+#ready {
+	display: inline-block;
+	width: 300px;
+	}
+
+#eatenBox {
+	float: none;
+	margin: auto;
+	width: 100%;
+	}
+
+#eaten {
+	display: inline-block;
+	width: 300px;
+	}
+
+}
