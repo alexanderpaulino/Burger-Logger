@@ -22,6 +22,6 @@ Finally, the app won't accept just any text. Blank entries won't be accepted, no
 
 <hr>
 
-Heroku Link: Coming Soon
+Heroku Link: https://burger-diary-ap.herokuapp.com/
 
 Powered by body-parser, express, handlebars, and the mysql NPM packages.
