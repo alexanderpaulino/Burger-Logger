@@ -43,9 +43,21 @@ $(function() {
     }).then(
       function() {
         console.log("created new burger");
-        // Reload the page to get the updated list
-        location.reload();
       }
     );
   });
+
+  //Delete request, to allow user to remove burger entries if they like.
+  $(".delete").on("click", function(event) {
+      var id = $(this).data("id");
+      $.ajax("/api/deleteburgers/" + id, {
+        type: "DELETE"
+      })
+    });
+
+  //Added a window reload function for all successful Ajax calls
+  $(document).ajaxStop(function(){
+    window.location.reload();
+  });
+
 });

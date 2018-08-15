@@ -1,14 +1,15 @@
 {{#if eaten}}
 
 <li id="eaten">
-	{{id}}.
 	{{burger_name}}
+	<button class="delete" data-id="{{id}}" id="deleteButton">
+	<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+	</button>
 </li>
 
 {{else}}
 
 <li id="ready">
-	{{id}}.
 	{{burger_name}}
 	<button class="devour" data-id="{{id}}" id="devourButton">
 	Devour it!

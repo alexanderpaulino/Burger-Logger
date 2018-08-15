@@ -40,6 +40,12 @@ html, body {
 	float: right;
 }
 
+#deleteButton {
+	position: relative;
+	float: right;
+	margin-bottom:2px;
+}
+
 #eatenBox {
 	float: right;
 	padding: 5px;
@@ -50,6 +56,7 @@ html, body {
 
 #eaten {
 	width: 350px;
+	height: 30px;
 	color: gray;
 	background-color: #D2D2D2;
 	text-align: left;
